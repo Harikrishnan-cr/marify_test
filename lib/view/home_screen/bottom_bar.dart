@@ -228,10 +228,10 @@ class _MyHomePageState extends State<MyHomePage>
               labelColor: Color(0xFFC41A3B),
               unselectedLabelColor: Colors.white,
               labelStyle: TextStyle(fontSize: 10.0),
-              indicator: UnderlineTabIndicator(
-                borderSide: BorderSide(color: Colors.black54, width: 0.0),
-                insets: EdgeInsets.fromLTRB(50.0, 0.0, 50.0, 40.0),
-              ),
+              // indicator: UnderlineTabIndicator(
+              //   borderSide: BorderSide(color: Colors.black54, width: 0.0),
+              //   insets: EdgeInsets.fromLTRB(50.0, 0.0, 50.0, 40.0),
+              // ),
               //For Indicator Show and Customization
               indicatorColor: Colors.black54,
               tabs: <Widget>[

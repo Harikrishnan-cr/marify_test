@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:marrify/view/chat_screen/chat_screen.dart';
 import 'package:marrify/view/home_screen/home_screen.dart';
+import 'package:marrify/view/notification/notification.dart';
 
 // class HomePage extends StatefulWidget {
 //   @override
@@ -205,9 +207,9 @@ class _MyHomePageState extends State<MyHomePage>
       body: TabBarView(
         children: <Widget>[
           HomeScreen(),
-          Text('Homef'),
-          Text('Homfffe'),
-          Text('Homesaa'),
+          ChatScreen(),
+          Text('Homfffettttttttttt'),
+          NotificationScreen(),
           Text('Homggge'),
         ],
         // If you want to disable swiping in tab the use below code

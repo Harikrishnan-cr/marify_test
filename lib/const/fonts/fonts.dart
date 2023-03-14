@@ -43,4 +43,21 @@ class GoogleFont {
 
   static TextStyle homeScreenFirstImageButtonStyle = GoogleFonts.poppins(
       fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white);
+
+  static TextStyle homeScreenappBarTextStyle = GoogleFonts.poppins(
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      color: MarraifyColors.secondaryGrey,
+      letterSpacing: 1);
+
+  static TextStyle otherAppBarTextStyle = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: MarraifyColors.greyColor,
+  );
+  static TextStyle messageScreenTimeTextStyle = GoogleFonts.poppins(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: MarraifyColors.messageScreenGrey,
+  );
 }

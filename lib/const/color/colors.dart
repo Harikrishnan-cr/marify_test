@@ -8,6 +8,8 @@ class MarraifyColors {
   static Color greenColor = HexColor('#52D06D');
   static Color secondaryGrey = HexColor('#989BA4');
 
+  static Color messageScreenGrey = HexColor('#CDCECF');
+
   static Color grediantColorOne = HexColor('#FC7272');
   static Color grediantColorTwo = HexColor('#F7417A');
 }

@@ -26,9 +26,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
-          const sizeBoxWidget(size: 20),
+          const sizeBoxWidget(size: 15),
           SliverAppBar(
-            backgroundColor: Color.fromARGB(255, 231, 3, 3),
+            toolbarHeight: 75,
+            backgroundColor: Colors.white,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -37,11 +38,18 @@ class HomeScreen extends StatelessWidget {
                     Row(
                       children: [
                         Container(
-                          width: 60,
-                          height: 55,
+                          width: 62,
+                          height: 62,
                           decoration: BoxDecoration(
-                              border: Border.all(color: Colors.black, width: 3),
+                              border: Border.all(color: Colors.white, width: 3),
                               borderRadius: BorderRadius.circular(15),
+                              boxShadow: const [
+                                BoxShadow(
+                                    color: Color.fromARGB(255, 216, 216, 216),
+                                    blurRadius: 1,
+                                    spreadRadius: 0.5,
+                                    offset: Offset(0.1, 0.5))
+                              ],
                               color: Colors.black,
                               image: DecorationImage(
                                   image: NetworkImage(profileImage),
@@ -55,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Text(
                           greetings,
-                          style: GoogleFont.homeTextStyle,
+                          style: GoogleFont.homeScreenappBarTextStyle,
                         ),
                         Text(
                           name,
@@ -66,22 +74,21 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 Container(
-                  width: 60,
-                  height: 60,
+                  width: 54,
+                  height: 54,
                   decoration: BoxDecoration(
                       boxShadow: const [
                         BoxShadow(
-                          color: Colors.white,
-                          blurStyle: BlurStyle.outer,
-                          blurRadius: 1.0,
-                          spreadRadius: 1.8,
-                        ),
+                            color: Color.fromARGB(255, 216, 216, 216),
+                            blurRadius: 1,
+                            spreadRadius: 0.5,
+                            offset: Offset(0.1, 0.5))
                       ],
                       borderRadius: BorderRadius.circular(50),
                       color: Colors.white,
                       image: DecorationImage(
                           image: Svg('assets/icons/Configure.svg',
-                              size: Size(29, 29),
+                              size: Size(25, 25),
                               color: MarraifyColors.primaryColorPink))),
                 )
               ],
@@ -186,7 +193,7 @@ class HomeScreen extends StatelessWidget {
                     height: 170,
                     decoration: BoxDecoration(
                         color: Colors.amber,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image:
                                 AssetImage('assets/images/Rectangle 401.jpg'),
                             fit: BoxFit.fill),
@@ -223,13 +230,19 @@ class HomeScreen extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   child: Container(
                     width: 349,
-                    decoration: BoxDecoration(boxShadow: [
-                      BoxShadow(
-                          color: Color.fromARGB(255, 255, 247, 247),
-                          blurRadius: 1,
-                          spreadRadius: 0.5,
-                          offset: Offset(0.1, 0.5))
-                    ]),
+                    decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            topRight: Radius.circular(20),
+                            bottomLeft: Radius.circular(20),
+                            bottomRight: Radius.circular(20)),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color.fromARGB(255, 216, 216, 216),
+                              blurRadius: 1,
+                              spreadRadius: 0.5,
+                              offset: Offset(0.1, 0.5))
+                        ]),
                     child: Column(
                       children: [
                         Container(
